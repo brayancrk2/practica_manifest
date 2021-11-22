@@ -12,7 +12,7 @@ self.addEventListener('install', evento=>{
         .then(cache=>{
             return cache.addAll([
                 '/',
-                'index.html',
+                '/index.html',
                 'css/bootstrap.min.css',
                 'css/londinium-theme.css',
                 'css/styles.css',
@@ -20,7 +20,7 @@ self.addEventListener('install', evento=>{
                 'js/bootstrap.min.js',
                 'js/application.js',
                 'js/app.js',
-                'offline.html',
+                '/offline.html',
 
             ]);
         });
