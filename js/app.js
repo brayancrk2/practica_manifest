@@ -1,3 +1,9 @@
+var url=window.location.href;
+var ubicacionSw='/Ejemplo-PWA/sw.js';
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('/sw.js');
+
+    if(url.includes('localhost')){
+        ubicacionSw='/sw.js';
+    }
+    navigator.serviceWorker.register(ubicacionSw);
 }
